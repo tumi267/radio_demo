@@ -1,0 +1,129 @@
+/* components/Lineup.module.css */
+.lineupContainer {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  
+  .daysNavigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .daysNavigation::-webkit-scrollbar {
+    display: none; /* For Chrome/Safari */
+  }
+  
+  .dayButton {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .dayButton:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .activeDay {
+    background-color: #0066cc;
+    color: white;
+  }
+  
+  .dayTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .showsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Medium screens (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .showsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Large screens (desktops, 1024px and up) */
+  @media (min-width: 1024px) {
+    .showsGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Extra large screens (1200px and up) */
+  @media (min-width: 1200px) {
+    .showsGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .showCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .showImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .showInfo {
+    padding: 16px;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    flex-grow: 1;
+  }
+  
+  .showName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .showTime {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .showBack {
+    padding: 16px;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .showDescription {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .noShows {
+    color: #666;
+    font-style: italic;
+  }

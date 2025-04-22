@@ -1,0 +1,120 @@
+/* ========== MAIN LAYOUT ========== */
+.main {
+    min-height: 100vh;
+  }
+  
+  /* ========== HERO SECTION ========== */
+  .hero {
+    background: linear-gradient(to right, #1e40af, #6b21a8);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .heroContent {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+  
+  .logoContainer {
+    margin: 0 auto 2rem;
+    width: fit-content;
+  }
+  
+  .logo {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .heroTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ========== CONTACT SECTION ========== */
+  .contactSection {
+    padding: 3rem 1rem;
+  }
+  
+  .contactContainer {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1e40af;
+  }
+  
+  .contactTable {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contactRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactCategory {
+    font-weight: 600;
+    color: #1e40af;
+    font-size: 1.125rem;
+  }
+  
+  .contactValue {
+    font-size: 1rem;
+    color: #334155;
+  }
+  
+  .contactLink {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .contactLink:hover {
+    color: #1e40af;
+    text-decoration: underline;
+  }
+  
+  /* ========== MEDIA QUERIES ========== */
+  @media (min-width: 640px) {
+    .contactRow {
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      gap: 2rem;
+    }
+    
+    .contactCategory {
+      text-align: right;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .contactTable {
+      grid-template-columns: 1fr;
+    }
+  }

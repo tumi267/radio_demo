@@ -1,0 +1,66 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .overlay {
+    position: relative;
+  }
+  
+  .onAir {
+    background: red;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    border-radius: 999px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+  }
+  
+  .playButton {
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .listen {
+    font-size: 1rem;
+    opacity: 0.8;
+    max-width: 90%;
+  }
+  
+  /* Larger screens */
+  @media (min-width: 768px) {
+    .playButton {
+      font-size: 4rem;
+    }
+  
+    .onAir {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .listen {
+      font-size: 1.2rem;
+    }
+  }
+  
